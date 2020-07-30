@@ -2,9 +2,9 @@
 ## Group PYG-25
 
 ## Contributors
-- [Naa Norley Wayoe](./)
-- [Moses Fetuah](./)
-- [Kofi Ocran](./)
+- [Naa Norley Wayoe](https://github.com/naa-norley)
+- [Moses Fetuah](https://github.com/Moses-bit97)
+- [Kofi Ocran](https://github.com/mupati)
 
 
 ## Business Problem
