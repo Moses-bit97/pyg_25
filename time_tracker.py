@@ -54,3 +54,17 @@ print(
     '''
 )
 
+filename = 'tracker_summary.csv'
+file_exists = os.path.isfile(filename)
+with open(filename, 'a') as write_obj:
+    headers = ['Task', 'Start_Date', 'Start_Time', 'Completion_Date',
+               'Completion_Time', 'Duration(Hrs)', 'Earnings($)']
+    writer = csv.DictWriter(write_obj, delimiter=',',
+                            lineterminator='\n', fieldnames=headers)
+    if not file_exists:
+        writer.writeheader()
+    writer.writerow(
+        {'Task': task_name, 'Start_Date': start_date, 'Start_Time': start,
+         'Completion_Date': end_date,
+         'Completion_Time': end, 'Duration(Hrs)': duration, 'Earnings($)': earning
+         })
